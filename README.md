@@ -1,3 +1,3 @@
 chef-redmine
 ============
-chef recipes for redmine server
+cookbooks for redmine server
