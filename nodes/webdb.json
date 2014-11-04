@@ -1,0 +1,18 @@
+{ 
+  "redmine" : {
+   "db_name": "db_redmine",
+   "user": "user_redmine",
+   "password": "password"
+  },
+  "run_list": [
+    "recipe[selinux::disabled]",
+    "recipe[yum-epel]",
+    "recipe[ruby]", 
+    "recipe[redmine-mysql]",
+    "recipe[passenger]",
+    "recipe[redmine]"
+  ],
+  "automatic": {
+    "ipaddress": "webdb"
+  }
+}

@@ -1,0 +1,7 @@
+production:
+  adapter: mysql2
+  database: <%= node['redmine']['db_name'] %>
+  host: localhost
+  username: <%= node['redmine']['user'] %>
+  password: <%= node['redmine']['password'] %>
+  encoding: utf8
